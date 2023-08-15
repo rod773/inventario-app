@@ -16,5 +16,9 @@ export class ProductoListaComponent {
     this.obtenerProductos();
   }
 
-  private obtenerProductos() {}
+  private obtenerProductos() {
+    this.productoServicio
+      .obtenerProductosLista()
+      .subscribe((datos) => (this.productos = datos));
+  }
 }
