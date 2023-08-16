@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductoListaComponent } from './producto-lista/producto-lista.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AgregarProductoComponent } from './agregar-producto/agregar-producto.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductoListaComponent],
+  declarations: [AppComponent, ProductoListaComponent, AgregarProductoComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
